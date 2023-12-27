@@ -1,5 +1,7 @@
 import { db } from "../connect.js";
 import jwt from "jsonwebtoken";
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const getRelationships = (req,res)=>{
     const q = "SELECT followerUserId FROM relationships WHERE followedUserId = ?";

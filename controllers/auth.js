@@ -1,6 +1,8 @@
 import { db } from "../connect.js";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const register = (req, res) => {
     //CHECK USER IF EXISTS

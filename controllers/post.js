@@ -1,6 +1,8 @@
 import { db } from "../connect.js";
 import jwt from "jsonwebtoken";
 import moment from "moment";
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 export const getPosts = (req, res) => {
