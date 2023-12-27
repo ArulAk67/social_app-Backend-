@@ -19,7 +19,7 @@ app.use((req, res, next) => {
     next();
 });
 app.use(express.json())
-app.use(cors({origin:"https://658c626b77b8f50ea3334291--adorable-blini-bbe727.netlify.app"}))
+app.use(cors({origin:"https://mediagram-social.netlify.app"}))
 // app.use(cors())
 app.use(cookieParser())
 
